@@ -1,0 +1,23 @@
+{
+  "name": "goodreads_jsbot",
+  "version": "1.0.0",
+  "description": "A Discord bot that creates an embed for goodreads pages",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "run": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "discord.js": "^14.8.0",
+    "node-html-markdown": "^1.3.0",
+    "node-html-parser": "^6.1.5",
+    "xpath-html": "^1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0"
+  }
+}
