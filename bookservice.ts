@@ -4,8 +4,8 @@ const htmlmarkdown = require('node-html-markdown');
 
 const nhm = new htmlmarkdown.NodeHtmlMarkdown();
 
-class BookService {
-    static async getBookFromUrl(url) {
+export class BookService {
+    static async getBookFromUrl(url: string) {
         const { data } = await axios.get(url);
         let nodes = xpath.fromPageSource(data);
         let title = nodes.findElement("//h1[@data-testid='bookTitle']").getText();
@@ -19,5 +19,3 @@ class BookService {
         }
     }
 }
-
-module.exports = BookService

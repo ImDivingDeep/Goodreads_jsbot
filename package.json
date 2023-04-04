@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A Discord bot that creates an embed for goodreads pages",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "run": "node .",
+    "build": "tsc",
+    "debug": "ts-node .",
+    "run" : "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,6 +20,9 @@
     "xpath-html": "^1.0.3"
   },
   "devDependencies": {
-    "eslint": "^8.37.0"
+    "@types/node": "^18.15.11",
+    "eslint": "^8.37.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
   }
 }
